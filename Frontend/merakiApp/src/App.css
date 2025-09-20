@@ -12,7 +12,8 @@
 :root {
   --primary-color: hsl(207, 100%, 71%);
   --secundary-color:  hsl(143, 83%, 66%);
-  --primary-dark-color: hsl(203, 100%, 30%);
+  --primary-normal-color: hsl(207, 100%, 50%);
+  --primary-dark-color: hsl(207, 100%, 23%);
   --error-color: hsl(353, 100%, 65%);
   --correct-color: hsl(155, 100%, 40%);
   --warning-color: hsl(29, 100%, 66%);

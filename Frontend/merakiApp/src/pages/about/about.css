@@ -37,30 +37,35 @@
 
   .iconoVerde {
     border: 4px solid rgb(14, 175, 108);
+    background-color:  rgb(14, 175, 108);
     border-radius: 60%;
     padding: 1rem;
     width: 100px;
   }
   .iconoRojo {
     border: 4px solid rgb(217, 42, 56);
+    background-color:  rgb(217, 42, 56);
     border-radius: 60%;
     padding: 1rem;
     width: 100px;
   }
   .iconoAmarillo {
     border: 4px solid rgb(196, 202, 23);
+    background-color:  rgb(196, 202, 23);
     border-radius: 60%;
     padding: 1rem;
     width: 100px;
   }
   .iconoRosa {
     border: 4px solid rgb(202, 23, 163);
+    background-color: rgb(202, 23, 163);
     border-radius: 60%;
     padding: 1rem;
     width: 100px;
   }
   .iconoNaranja {
     border: 4px solid rgb(231, 108, 41);
+    background-color:  rgb(231, 108, 41);
     border-radius: 60%;
     padding: 1rem;
     width: 100px;

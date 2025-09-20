@@ -13,10 +13,8 @@
 }
 
 .section-dudas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1)),
-    url('/images/fondos/avion.jpg');
   color: var(--primary-color);
-  
+
   .fondo-preguntas {
     width: 50%;
     margin: 5rem;

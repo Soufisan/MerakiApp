@@ -3,13 +3,14 @@ import { Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../../../public/logos-blancos/3.png';
 import './navbar.css';
+import { Boton } from '../boton/Boton';
 
 export const NavBar = () => {
   return (
     <nav className="sticky-top">
       <Container>
         <Row>
-          <Col className="d-flex align-items-center">
+          <Col className="d-flex align-items-center ">
             <img src={logo} alt="" />
           </Col>
           <Col className="d-flex align-items-center gap-4 justify-content-center">
@@ -51,11 +52,17 @@ export const NavBar = () => {
               FQA
             </NavLink>
           </Col>
-          <Col className="d-flex align-items-center justify-content-end ">
-            <button className="mx-2">Regístrate</button>
-            <button>
-              <i class="bi bi-box-arrow-in-right"></i>Login
-            </button>
+          <Col className="d-flex align-items-center justify-content-end gap-2">
+            <Boton
+              aspecto="normal"
+              nombre="Registrar"
+              icono="bi bi-plus-circle"
+            />
+            <Boton
+              aspecto="normal"
+              nombre="Acceder"
+              icono="bi bi-box-arrow-in-right"
+            />
           </Col>
         </Row>
       </Container>

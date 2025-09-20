@@ -65,7 +65,7 @@ export const About = () => {
           <Col lg={6}>
             <h2 className="text-center m-4">Conoce nuestra historia</h2>
             <p>
-              Somos Amanda y <span>Sofiuan</span>, dos viajeros incansables que
+              Somos Amanda y <span>Soufian</span>, dos viajeros incansables que
               un día, en medio de un tren nocturno entre <span>Hanoi</span> y Da
               Nang, decidimos convertir nuestra pasión en un proyecto de vida:
               una <span>comunidad </span>

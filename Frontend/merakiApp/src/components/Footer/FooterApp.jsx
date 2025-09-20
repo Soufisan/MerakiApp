@@ -30,8 +30,8 @@ export const FooterApp = () => {
                   target="_blank"
                 >
                   <div className="d-flex py-2">
-                    <img src="/images/footer/instagram.png" alt="" />
-                    <p className="m-2">MerakiViajes</p>
+                    <i className="bi bi-instagram px-2"></i>
+                    <p>MerakiViajes</p>
                   </div>
                 </Link>
 
@@ -41,8 +41,8 @@ export const FooterApp = () => {
                   target="_blank"
                 >
                   <div className="d-flex py-2">
-                    <img src="/images/footer/what.png" alt="" />
-                    <p className="m-2">+ 34 666 555 444</p>
+                    <i className="bi bi-whatsapp px-2"></i>
+                    <p>+ 34 666 555 444</p>
                   </div>
                 </Link>
 
@@ -52,8 +52,8 @@ export const FooterApp = () => {
                   target="_blank"
                 >
                   <div className="d-flex py-2">
-                    <img src="/images/footer/gmail.png" alt="" />
-                    <p className="m-2">infoMeraki@gmail.com</p>
+                    <i className="bi bi-envelope-at px-2"></i>
+                    <p>infoMeraki@gmail.com</p>
                   </div>
                 </Link>
               </div>
