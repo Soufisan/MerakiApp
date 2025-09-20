@@ -11,14 +11,14 @@ export const NavBar = () => {
       <Container>
         <Row>
           <Col className="d-flex align-items-center ">
-            <img src={logo} alt="" />
+            <img className='img-logo' src={logo} alt="" />
           </Col>
           <Col className="d-flex align-items-center gap-4 justify-content-center">
             <NavLink to="/" className="links">
               Home
             </NavLink>
             <NavLink className="links">Paises</NavLink>
-            <NavLink className="links">Destinos</NavLink>
+            <NavLink as={Link} to='/totaldestinos' className="links">Destinos</NavLink>
             <NavLink to="/about" className="links">
               About
             </NavLink>

@@ -2,8 +2,8 @@
 nav {
   background-color: var(--primary-color);
   padding-block: 1rem;
-  img {
-    width: 50px;
+  .img-logo{
+    width: 200px;
   }
 
   .links {
