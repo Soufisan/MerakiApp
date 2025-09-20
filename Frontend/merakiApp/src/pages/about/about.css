@@ -1,0 +1,29 @@
+.section-portada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)),
+    url('/images/about/portada.png');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 90px;
+
+    img {
+      width: 500px;
+    }
+    button {
+      width: fit-content;
+      margin-left: 200px;
+    }
+  }
+}
+
+.presentacion{
+  padding-block: 3rem;
+.img-avion {
+  width: 100%;
+}
+}
+
