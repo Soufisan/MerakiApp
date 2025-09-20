@@ -9,9 +9,6 @@
 }
 
 
-
-
-
 :root {
   --primary-color: hsl(207, 100%, 71%);
   --secundary-color:  hsl(143, 83%, 66%);
@@ -19,8 +16,10 @@
   --error-color: hsl(353, 100%, 65%);
   --correct-color: hsl(155, 100%, 40%);
   --warning-color: hsl(29, 100%, 66%);
+  --letra-color: white;
 }
 
 * {
   font-family: 'Josefin Sans Variable', sans-serif;
+  
 }
