@@ -14,7 +14,8 @@ import { Vuelos } from './pages/Consejos/Vuelos';
 import { Equipaje } from './pages/Consejos/Equipaje';
 import { Documentacion } from './pages/Consejos/Documentacion';
 import { Tiempo } from './pages/Consejos/Tiempo';
-import {TiempoGeneral} from './pages/tiempo/TiempoGeneral'
+import { TiempoGeneral } from './components/tiempo/TiempoGeneral';
+
 
 function App() {
   const [destinos, setdestinos] = useState(destinoDisponible);

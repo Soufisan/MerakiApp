@@ -26,9 +26,6 @@ export const Buscador = ({ setDataTotal }) => {
     <div>
       <label>Introduce una ciudad</label>
       <input type="text" value={city} onChange={handleChange} />
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam labore 
-      nostrum facilis ab? Cumque, quam commodi! Non iste nihil consectetur 
-      laboriosam perferendis. Est nam totam animi autem ratione molestiae esse?
       <Button onClick={onSubmit}>Aceptar</Button>
     </div>
   );
