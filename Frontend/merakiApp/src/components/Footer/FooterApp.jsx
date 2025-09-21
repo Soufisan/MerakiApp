@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const FooterApp = () => {
   return (
     <>
-      <footer className="pt-5">
+      <footer className="pt-5 sticky-bottom-bottom">
         <Container>
           <Row>
             <Col className="mt-5">

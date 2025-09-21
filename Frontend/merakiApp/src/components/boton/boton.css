@@ -39,3 +39,7 @@
     margin: 0;
    }
 }
+
+.alerta {
+  background-color: var(--error-color);
+}

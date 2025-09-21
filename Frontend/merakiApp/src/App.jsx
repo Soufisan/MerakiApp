@@ -8,6 +8,8 @@ import { Preguntas } from './pages/Preguntas/Preguntas';
 import { destinoDisponible } from './assets/data/destinos';
 import { useState } from 'react';
 import { TotalDestinos } from './components/Totaldestinos/TotalDestinos';
+import { Register } from './pages/register/Register';
+import { ContextMeraki } from './context/ContextMeraki';
 
 function App() {
     const [destinos, setdestinos] = useState(destinoDisponible);
@@ -15,12 +17,20 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home destinos={destinos} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/totaldestinos" element={<TotalDestinos destinos={destinos} />} />
-          <Route path="/preguntas" element={<Preguntas />} />
-        </Routes>
+          
+            <ContextMeraki>
+              <Routes>
+                <Route path="/" element={<Home destinos={destinos} />} />
+                <Route path="/totaldestinos" element={<TotalDestinos destinos={destinos} />} />
+                <Route path="/register" element={<Register />} />
+              </Routes>
+            </ContextMeraki>
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/preguntas" element={<Preguntas />} />
+            </Routes>
+            
+          
         <FooterApp />
       </BrowserRouter>
       

@@ -1,8 +1,8 @@
 import './boton.css'
 
-export const Boton = ({nombre, icono, aspecto}) => {
+export const Boton = ({nombre, icono, aspecto, ftn}) => {
 
   return (
-    <button className={aspecto}><i className={icono}></i>{nombre}</button>
+    <button onClick={ftn} className={aspecto}> {icono && <i className={icono}></i>}{nombre}</button>
   )
 }

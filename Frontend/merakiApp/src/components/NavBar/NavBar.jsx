@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../../../public/logos-blancos/3.png';
@@ -6,12 +6,19 @@ import './navbar.css';
 import { Boton } from '../boton/Boton';
 
 export const NavBar = () => {
+  const navigate = useNavigate()
+  const navigateRegister = () => {
+    navigate('/register')
+  } 
+  const navigateLogo = () => {
+    navigate('/')
+  }
   return (
     <nav className="sticky-top">
       <Container>
         <Row>
           <Col className="d-flex align-items-center ">
-            <img className='img-logo' src={logo} alt="" />
+            <img onClick={navigateLogo} className='img-logo' src={logo} alt="" />
           </Col>
           <Col className="d-flex align-items-center gap-4 justify-content-center">
             <NavLink to="/" className="links">
@@ -22,7 +29,7 @@ export const NavBar = () => {
             <NavLink to="/about" className="links">
               About
             </NavLink>
-            <NavDropdown
+       {/*      <NavDropdown
               as={Link}
               to="/about"
               className="links"
@@ -46,19 +53,21 @@ export const NavBar = () => {
                   ¿Por qué elegirnos?
                 </Link>
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
 
             <NavLink to="/preguntas" className="links">
               FQA
             </NavLink>
           </Col>
-          <Col className="d-flex align-items-center justify-content-end gap-2">
+          <Col  className="d-flex align-items-center justify-content-end gap-2">
             <Boton
+              ftn={navigateRegister}
               aspecto="normal"
               nombre="Registrar"
               icono="bi bi-plus-circle"
             />
             <Boton
+              
               aspecto="normal"
               nombre="Acceder"
               icono="bi bi-box-arrow-in-right"
