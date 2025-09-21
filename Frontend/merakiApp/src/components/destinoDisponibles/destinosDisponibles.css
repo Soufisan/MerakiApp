@@ -1,5 +1,8 @@
 article {
-  animation: slide-animation 30s infinite linear;
+ .carrusel-container{
+animation: slide-animation 30s infinite linear;
+ }
+  
 
   .div-imagen {
     position: relative;

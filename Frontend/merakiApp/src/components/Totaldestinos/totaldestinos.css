@@ -3,6 +3,7 @@
 
   .div-imagen-destino {
     position: relative;
+
     .img-card-destino {
       aspect-ratio: 1/1;
       border-radius: 20px;
@@ -23,10 +24,9 @@
       h3 {
         color: white;
         text-shadow: 0 0 2px  rgba(0, 0, 0, 0.771);
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: 800;
       
-
         span{
           font-size: 1rem;
           font-weight: 400;
