@@ -1,9 +1,7 @@
-
-
 .normal {
   border-radius: 5px;
   border: none;
-  padding-block: .7rem;
+  padding-block: 0.7rem;
   padding-inline: 1rem;
   background-color: var(--primary-dark-color);
   color: white;
@@ -11,19 +9,19 @@
   align-items: center;
   width: fit-content;
 
-   i {
+  i {
     display: flex;
     align-items: center;
     padding-right: 0.5rem;
     font-size: 1rem;
     margin: 0;
-   }
+  }
 }
 
 .redondo {
   border-radius: 50px;
   border: none;
-  padding-block: .7rem;
+  padding-block: 0.7rem;
   padding-inline: 1rem;
   background-color: var(--primary-dark-color);
   color: white;
@@ -31,13 +29,25 @@
   align-items: center;
   width: fit-content;
 
-   i {
+  i {
     display: flex;
     align-items: center;
     padding-right: 0.5rem;
     font-size: 1rem;
     margin: 0;
-   }
+  }
+}
+
+.boton-saberMas {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end:0;
+  border: none;
+  background-color: rgba(0, 0, 0 , .2);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 5px;
+  color:white;
+  padding: .5rem;
 }
 
 .alerta {

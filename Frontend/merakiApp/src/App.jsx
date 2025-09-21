@@ -8,15 +8,27 @@ import { Preguntas } from './pages/Preguntas/Preguntas';
 import { destinoDisponible } from './assets/data/destinos';
 import { useState } from 'react';
 import { TotalDestinos } from './components/Totaldestinos/TotalDestinos';
+<<<<<<< HEAD
 import { Register } from './pages/register/Register';
 import { ContextMeraki } from './context/ContextMeraki';
+=======
+import { InfoDestinos } from './components/infoDestinos/InfoDestinos';
+import { Consejos } from './pages/Consejos/Consejos';
+import { Vuelos } from './pages/Consejos/Vuelos';
+import { Equipaje } from './pages/Consejos/Equipaje';
+import { Documentacion } from './pages/Consejos/Documentacion';
+import { Tiempo } from './pages/Consejos/Tiempo';
+import { TiempoGeneral } from './components/tiempo/TiempoGeneral';
+
+>>>>>>> origin/main
 
 function App() {
-    const [destinos, setdestinos] = useState(destinoDisponible);
+  const [destinos, setdestinos] = useState(destinoDisponible);
   return (
     <>
       <BrowserRouter>
         <NavBar />
+<<<<<<< HEAD
           
             <ContextMeraki>
               <Routes>
@@ -31,9 +43,30 @@ function App() {
             </Routes>
             
           
+=======
+        <Routes>
+          <Route path="/" element={<Home destinos={destinos} />} />
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/totaldestinos"
+            element={<TotalDestinos destinos={destinos} />}
+          />
+          <Route
+            path="/infoDestinos/:id"
+            element={<InfoDestinos destinos={destinos} />}
+          />
+          <Route path="/preguntas" element={<Preguntas />} />
+          <Route path="/consejos" element={<Consejos />}>
+            <Route index element={<Vuelos />} />
+            <Route path="equipaje" element={<Equipaje />} />
+            <Route path="documentacion" element={<Documentacion />} />
+            <Route path="tiempo" element={<Tiempo />} />
+          </Route>
+          <Route path="/tiempoGeneral" element={<TiempoGeneral />} />
+        </Routes>
+>>>>>>> origin/main
         <FooterApp />
       </BrowserRouter>
-      
     </>
   );
 }

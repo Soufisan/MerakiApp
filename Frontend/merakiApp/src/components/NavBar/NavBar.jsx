@@ -18,18 +18,27 @@ export const NavBar = () => {
       <Container>
         <Row>
           <Col className="d-flex align-items-center ">
+<<<<<<< HEAD
             <img onClick={navigateLogo} className='img-logo' src={logo} alt="" />
+=======
+            <img className="img-logo" src={logo} alt="" />
+>>>>>>> origin/main
           </Col>
           <Col className="d-flex align-items-center gap-4 justify-content-center">
             <NavLink to="/" className="links">
               Home
             </NavLink>
-            <NavLink className="links">Paises</NavLink>
-            <NavLink as={Link} to='/totaldestinos' className="links">Destinos</NavLink>
+            <NavLink as={Link} to="/totaldestinos" className="links">
+              Destinos
+            </NavLink>
             <NavLink to="/about" className="links">
               About
             </NavLink>
+<<<<<<< HEAD
        {/*      <NavDropdown
+=======
+            {/* <NavDropdown
+>>>>>>> origin/main
               as={Link}
               to="/about"
               className="links"
@@ -55,8 +64,15 @@ export const NavBar = () => {
               </NavDropdown.Item>
             </NavDropdown> */}
 
-            <NavLink to="/preguntas" className="links">
-              FQA
+         
+            <NavLink to="/consejos" className="links">
+              Consejos
+            </NavLink>
+            <NavLink as={Link} to="/tiempoGeneral" className="links">
+              Tiempo
+            </NavLink>
+               <NavLink to="/preguntas" className="links">
+              FAQ
             </NavLink>
           </Col>
           <Col  className="d-flex align-items-center justify-content-end gap-2">
