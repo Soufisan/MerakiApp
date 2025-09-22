@@ -3,23 +3,29 @@ import { Boton } from '../../components/boton/Boton';
 
 
 export const Tiempo = () => {
-
+  const navigate = useNavigate();
   return (
     <>
       <article>
         <h3 className="ms-5">Tips sobre el tiempo</h3>
+        <ul>
+          <li>
+            Usa apps confiables como AccuWeather, Weather.com, Windy, o la del
+            país que visitas.
+          </li>
+          <li>Mira el clima para cada día del viaje, no solo el general.</li>
+
+          <li>
+            Presta atención a alertas de clima extremo (tifones, tormentas,
+            calor extremo, etc.).
+          </li>
+        </ul>
         <p>
-          Aquí nosotros no podemos ayudarte de forma directa, simplemente te
-          mantendremos informado del tiempo que haga según diversas aplicaciones
-          para que así puedas preparar el equipaje, etc.
+          Siempre puedes utilizar nuestra aplicación para ver el tiempo días
+          antes del viaje y poder organizarte{' '}
         </p>
-        <p>
-          Nosotros hemos creado para una mayor comodidad un buscador del tiempo
-          según el país que vayas a visitas, solo te dejará ver desde que lo
-          mires hasta 1 mes. No hay que estar costantemente obsesionado con
-          mirar el tiempo hasta que no se acerque el día ya que puede variar
-          mucho.
-        </p>
+        <Boton aspecto='redondo' onClick={()=>navigate('/tiempoGeneral')} nombre='Ver tiempo'/>
+        
       </article>
     </>
   );
